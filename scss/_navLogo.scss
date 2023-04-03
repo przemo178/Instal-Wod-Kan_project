@@ -1,0 +1,44 @@
+div.logo a {
+  position: relative;
+  top: 0;
+  left: 0;
+  img {
+    position: fixed;
+    top: 0;
+    left: 2vw;
+    height: 10vh;
+    z-index: 1;
+    opacity: 0.7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    z-index: 2;
+  }
+  &:nth-child(2) {
+    position: fixed;
+    top: 0;
+    left: 8vw;
+    line-height: 10vh;
+    font-size: 6em;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px black;
+    transition: 0.3s;
+    z-index: 2;
+    &:hover {
+      //   background-color: white;
+      //   color: black;
+      padding: 0 0.7vw;
+      //   text-shadow: 0 0 10px white;
+    }
+  }
+}
+div.logo p {
+  position: absolute;
+  top: 4vh;
+  left: 30vw;
+  //   line-height: 10vh;
+  color: white;
+  font-size: 3em;
+}

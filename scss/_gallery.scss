@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+section.gallery {
+  position: relative;
+  min-height: 80vh;
+  background-color: rgb(247, 247, 243);
+  //   height: 300vh;
+  //   div.wrapGallery {
+  //     position: absolute;
+  //     top: 8vh;
+  //     left: 50%;
+  //     transform: translateX(-50%);
+  // width: 60vw;
+  // height: 200vh;
+  // background-color: gray;
+  h1 {
+    position: absolute;
+    top: 8vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15vw;
+    align-items: center;
+    font-size: 6em;
+    text-align: center;
+    border-bottom: 1px solid black;
+    cursor: default;
+  }
+  div.images {
+    position: absolute;
+    top: 20vh;
+    bottom: 0;
+    left: 20%;
+    right: 20%;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 3px black;
+    background-color: #0f67be;
+    // opacity: 0.9;
+    h2 {
+      position: absolute;
+      top: 50%;
+      left: 4%;
+      transform: translateY(-50%);
+      font-size: 4em;
+      color: white;
+      cursor: default;
+    }
+    div.budowaSieci {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 27%;
+      right: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: space-around;
+      //   background-color: green;
+      border-left: 1px solid white;
+      a {
+        position: relative;
+        flex-basis: calc(23% - 2%);
+        // flex-basis: 23%;
+        height: 28%;
+        overflow: hidden;
+        margin: 0 2%;
+        border-radius: 30px;
+        // box-shadow: 0 0 10px 3px white;
+        transition: 0.3s;
+        &:hover {
+          box-shadow: 0 0 10px 3px white;
+        }
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          min-width: 100%;
+          min-height: 100%;
+        }
+      }
+    }
+  }
+
+  //   div.images {
+  //     display: flex;
+  //     position: absolute;
+  //     top: 25vh;
+  //     bottom: 0;
+  //     left: 20%;
+  //     right: 20%;
+  //     flex-wrap: wrap;
+  //     justify-content: space-around;
+  //     align-content: space-between;
+  //     background-color: gray;
+  //     div.budowaSieci {
+  //       display: flex;
+  //       flex-basis: 100%;
+  //       min-height: 50vh;
+  //       flex-wrap: wrap;
+  //       justify-content: space-between;
+  //       align-content: space-between;
+  //       background-color: yellow;
+  //       position: relative;
+  //       top: 5vh;
+  //       h2 {
+  //         position: absolute;
+  //       }
+  //       a {
+  //         position: relative;
+  //         flex-basis: 23%;
+  //         height: 25%;
+  //         overflow: hidden;
+  //         border-radius: 30px;
+  //         box-shadow: 0 0 10px 3px black;
+  //         transition: 0.3s;
+  //         &:hover {
+  //           box-shadow: 0 0 20px 5px black;
+  //         }
+  //         img {
+  //           position: absolute;
+  //           top: 50%;
+  //           left: 50%;
+  //           transform: translate(-50%, -50%);
+  //           min-width: 100%;
+  //           min-height: 100%;
+  //         }
+  //       }
+  //     }
+  //   }
+}

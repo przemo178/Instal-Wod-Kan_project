@@ -1,0 +1,88 @@
+section.about {
+  background-color: rgb(247, 247, 243);
+  height: 85vh;
+  div.wrapAbout {
+    position: relative;
+    top: 8vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60vw;
+    h1 {
+      position: relative;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 15vw;
+      align-items: center;
+      font-size: 6em;
+      text-align: center;
+      border-bottom: 1px solid black;
+      cursor: default;
+    }
+    p.description {
+      font-family: "Cairo", sans-serif;
+      font-size: 2.4em;
+      text-align: justify;
+      text-indent: 4vw;
+      line-height: 4vh;
+      padding-top: 2vh;
+      padding-bottom: 5vh;
+      cursor: default;
+    }
+    div.imgAbout {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      //   img {
+      //     width: 19vw;
+      //     height: 28vh;
+      //     box-shadow: 0 0 10px black;
+      //     border-radius: 10px;
+      //   }
+      div.item {
+        position: relative;
+        top: 0;
+        left: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 19vw;
+        height: 28vh;
+        box-shadow: 0 0 10px black;
+        border-radius: 20px;
+        transition: 0.8s;
+        &:hover {
+          background-size: 120%;
+        }
+        &:hover p {
+          opacity: 1;
+        }
+      }
+      div.item:nth-of-type(1) {
+        background-image: url(../img/biznes-komp1.jpg);
+      }
+      div.item:nth-of-type(2) {
+        background-image: url(../img/lopataa.jpg);
+      }
+      div.item:nth-of-type(3) {
+        background-image: url(../img/studnia.jpg);
+      }
+
+      div.item p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Stick No Bills", sans-serif;
+        font-size: 4em;
+        font-weight: 700;
+        color: white;
+        text-shadow: 0 0 10px black;
+        letter-spacing: 1px;
+        opacity: 0;
+        transition: 0.8s;
+        cursor: default;
+      }
+    }
+  }
+}

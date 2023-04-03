@@ -1,0 +1,85 @@
+section.range {
+  text-align: center;
+  background-image: url(../img/tlo_zakres.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 90vh;
+  div.wrapRange {
+    position: relative;
+    top: 8vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60vw;
+    height: 80vh;
+    // background-color: #ddd;
+    h1 {
+      position: relative;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20vw;
+      height: 10vh;
+      //   align-items: center;
+      line-height: 10vh;
+      font-size: 6em;
+      color: white;
+      text-align: center;
+      //   border-bottom: 1px solid rgb(255, 221, 0);
+      //   border-bottom: 1px solid #0f67be;
+      background-color: #0f67be;
+      border-radius: 20px;
+      box-shadow: 0 0 15px white;
+      opacity: 0.9;
+      cursor: default;
+    }
+    div.blocks {
+      display: flex;
+      width: 100%;
+      height: 73%;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: space-between;
+      position: relative;
+      top: 5vh;
+      left: 0;
+      //   background-color: yellow;
+      div {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 13vw;
+        height: 13vw;
+        background-color: #0f67be;
+        border-radius: 30px;
+        box-shadow: 0 0 15px 3px white;
+        opacity: 0.9;
+        cursor: default;
+        transition: 0.3s;
+        &:hover {
+          opacity: 1;
+          box-shadow: 0 0 30px 5px white;
+        }
+        i {
+          position: absolute;
+          top: 2vh;
+          left: 50%;
+          transform: translateX(-50%);
+          font-size: 5em;
+          color: white;
+        }
+        p {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 10vw;
+          font-size: 3em;
+          font-weight: 500;
+          color: white;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
