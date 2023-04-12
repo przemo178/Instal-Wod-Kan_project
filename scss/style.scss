@@ -6,8 +6,9 @@
 body {
   font-size: 10px;
   font-family: "Stick No Bills", sans-serif;
+  background-color: rgb(247, 247, 243);
   //   background-color: gray;
-  height: 400vh;
+  // height: 400vh;
 }
 
 @import "variables";
@@ -19,3 +20,4 @@ body {
 @import "about";
 @import "range";
 @import "gallery";
+@import "contact";

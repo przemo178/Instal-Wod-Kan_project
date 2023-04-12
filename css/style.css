@@ -6,7 +6,7 @@
 body {
   font-size: 10px;
   font-family: "Stick No Bills", sans-serif;
-  height: 400vh;
+  background-color: rgb(247, 247, 243);
 }
 
 div.background {
@@ -25,9 +25,9 @@ div.logo a {
 }
 div.logo a img {
   position: fixed;
-  top: 0;
-  left: 2vw;
-  height: 10vh;
+  top: 2px;
+  left: 30px;
+  height: 100px;
   z-index: 1;
   opacity: 0.7;
   border-radius: 10px;
@@ -37,9 +37,9 @@ div.logo a img {
 }
 div.logo a:nth-child(2) {
   position: fixed;
-  top: 0;
-  left: 8vw;
-  line-height: 10vh;
+  top: 2px;
+  left: 150px;
+  line-height: 100px;
   font-size: 6em;
   font-weight: 700;
   color: white;
@@ -51,25 +51,25 @@ div.logo a:nth-child(2) {
   z-index: 2;
 }
 div.logo a:nth-child(2):hover {
-  padding: 0 0.7vw;
+  padding: 0 10px;
 }
 
 div.logo p {
   position: absolute;
-  top: 4vh;
-  left: 30vw;
+  top: 42px;
+  left: 570px;
   color: white;
   font-size: 3em;
 }
 
 nav.menu {
   position: absolute;
-  top: 2vh;
+  top: 20px;
   left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  min-width: 100%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -79,7 +79,7 @@ nav.menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 6vh;
+  height: 60px;
   width: 50%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -87,15 +87,15 @@ nav.menu ul {
 }
 nav.menu ul li a {
   display: block;
-  width: 9vw;
-  line-height: 6vh;
+  min-width: 170px;
+  line-height: 60px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   color: white;
   -webkit-box-shadow: 0 0 10px white;
           box-shadow: 0 0 10px white;
-  border-radius: 15px;
+  border-radius: 10px;
   font-size: 1.8em;
   font-weight: 700;
   letter-spacing: 1px;
@@ -157,16 +157,15 @@ header .dots span.active {
 }
 
 section.about {
-  background-color: rgb(247, 247, 243);
-  height: 85vh;
+  min-height: 850px;
 }
 section.about div.wrapAbout {
   position: relative;
-  top: 8vh;
+  top: 80px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 60vw;
+  max-width: 1200px;
 }
 section.about div.wrapAbout h1 {
   position: relative;
@@ -174,7 +173,7 @@ section.about div.wrapAbout h1 {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 15vw;
+  width: 250px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -187,10 +186,10 @@ section.about div.wrapAbout p.description {
   font-family: "Cairo", sans-serif;
   font-size: 2.4em;
   text-align: justify;
-  text-indent: 4vw;
-  line-height: 4vh;
-  padding-top: 2vh;
-  padding-bottom: 5vh;
+  text-indent: 100px;
+  line-height: 40px;
+  padding-top: 20px;
+  padding-bottom: 50px;
   cursor: default;
 }
 section.about div.wrapAbout div.imgAbout {
@@ -208,17 +207,17 @@ section.about div.wrapAbout div.imgAbout div.item {
   left: 0;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
-  width: 19vw;
-  height: 28vh;
+  background-size: 110%;
+  min-width: 370px;
+  min-height: 280px;
   -webkit-box-shadow: 0 0 10px black;
           box-shadow: 0 0 10px black;
-  border-radius: 20px;
+  border-radius: 10px;
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
 section.about div.wrapAbout div.imgAbout div.item:hover {
-  background-size: 120%;
+  background-size: 130%;
 }
 section.about div.wrapAbout div.imgAbout div.item:hover p {
   opacity: 1;
@@ -260,12 +259,12 @@ section.range {
 }
 section.range div.wrapRange {
   position: relative;
-  top: 8vh;
+  top: 80px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 60vw;
-  height: 80vh;
+  max-width: 1200px;
+  min-height: 700px;
 }
 section.range div.wrapRange h1 {
   position: relative;
@@ -273,14 +272,14 @@ section.range div.wrapRange h1 {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 20vw;
-  height: 10vh;
-  line-height: 10vh;
+  width: 400px;
+  height: 100px;
+  line-height: 100px;
   font-size: 6em;
   color: white;
   text-align: center;
   background-color: #0f67be;
-  border-radius: 20px;
+  border-radius: 10px;
   -webkit-box-shadow: 0 0 15px white;
           box-shadow: 0 0 15px white;
   opacity: 0.9;
@@ -291,7 +290,7 @@ section.range div.wrapRange div.blocks {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 73%;
+  min-height: 550px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -300,17 +299,17 @@ section.range div.wrapRange div.blocks {
   -ms-flex-line-pack: justify;
       align-content: space-between;
   position: relative;
-  top: 5vh;
+  top: 50px;
   left: 0;
 }
 section.range div.wrapRange div.blocks div {
   position: relative;
   top: 0;
   left: 0;
-  width: 13vw;
-  height: 13vw;
+  min-width: 250px;
+  min-height: 250px;
   background-color: #0f67be;
-  border-radius: 30px;
+  border-radius: 10px;
   -webkit-box-shadow: 0 0 15px 3px white;
           box-shadow: 0 0 15px 3px white;
   opacity: 0.9;
@@ -325,7 +324,7 @@ section.range div.wrapRange div.blocks div:hover {
 }
 section.range div.wrapRange div.blocks div i {
   position: absolute;
-  top: 2vh;
+  top: 20px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -338,7 +337,7 @@ section.range div.wrapRange div.blocks div p {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 10vw;
+  width: 200px;
   font-size: 3em;
   font-weight: 500;
   color: white;
@@ -352,16 +351,16 @@ section.range div.wrapRange div.blocks div p {
 
 section.gallery {
   position: relative;
-  min-height: 80vh;
+  min-height: 1800px;
   background-color: rgb(247, 247, 243);
 }
 section.gallery h1 {
   position: absolute;
-  top: 8vh;
+  top: 60px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 15vw;
+  width: 350px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -372,31 +371,36 @@ section.gallery h1 {
 }
 section.gallery div.images {
   position: absolute;
-  top: 20vh;
+  top: 180px;
   bottom: 0;
-  left: 20%;
-  right: 20%;
-  border-radius: 30px;
-  -webkit-box-shadow: 0 0 10px 3px black;
-          box-shadow: 0 0 10px 3px black;
-  background-color: #0f67be;
+  left: 50%;
+  min-width: 1200px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px 1px black;
+          box-shadow: 0 0 5px 1px black;
+  background-color: white;
 }
-section.gallery div.images h2 {
+section.gallery div.images h2:nth-of-type(1) {
   position: absolute;
-  top: 50%;
-  left: 4%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: 19%;
+  left: 1%;
+  width: 25%;
   font-size: 4em;
   color: white;
+  line-height: 70px;
+  text-align: center;
+  border-radius: 10px;
   cursor: default;
+  background-color: black;
 }
 section.gallery div.images div.budowaSieci {
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: 2%;
+  bottom: 59%;
   left: 27%;
-  right: 0;
+  right: 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -407,22 +411,23 @@ section.gallery div.images div.budowaSieci {
           justify-content: center;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
-  border-left: 1px solid white;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
 }
 section.gallery div.images div.budowaSieci a {
   position: relative;
-  -ms-flex-preferred-size: 21%;
-      flex-basis: 21%;
-  height: 28%;
+  width: 180px;
+  height: 180px;
   overflow: hidden;
-  margin: 0 2%;
-  border-radius: 30px;
+  margin: 0 15px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px 1px black;
+          box-shadow: 0 0 5px 1px black;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 section.gallery div.images div.budowaSieci a:hover {
-  -webkit-box-shadow: 0 0 10px 3px white;
-          box-shadow: 0 0 10px 3px white;
+  opacity: 0.8;
 }
 section.gallery div.images div.budowaSieci a img {
   position: absolute;
@@ -432,4 +437,240 @@ section.gallery div.images div.budowaSieci a img {
           transform: translate(-50%, -50%);
   min-width: 100%;
   min-height: 100%;
+}
+section.gallery div.images h2:nth-of-type(2) {
+  position: absolute;
+  top: 53%;
+  right: 1%;
+  width: 25%;
+  text-align: center;
+  font-size: 4em;
+  line-height: 70px;
+  color: white;
+  border-radius: 10px;
+  cursor: default;
+  background-color: black;
+}
+section.gallery div.images div.budowaPrzylaczy {
+  position: absolute;
+  top: 43%;
+  bottom: 31%;
+  left: 1%;
+  right: 27%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+section.gallery div.images div.budowaPrzylaczy a {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  margin: 0 15px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px 1px black;
+          box-shadow: 0 0 5px 1px black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+section.gallery div.images div.budowaPrzylaczy a:hover {
+  opacity: 0.8;
+}
+section.gallery div.images div.budowaPrzylaczy a img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+section.gallery div.images h2:nth-of-type(3) {
+  position: absolute;
+  top: 75%;
+  left: 1%;
+  width: 25%;
+  font-size: 4em;
+  line-height: 70px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  cursor: default;
+  background-color: black;
+}
+section.gallery div.images div.awarie {
+  position: absolute;
+  top: 71%;
+  bottom: 16%;
+  left: 27%;
+  right: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+section.gallery div.images div.awarie a {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  margin: 0 15px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px 1px black;
+          box-shadow: 0 0 5px 1px black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+section.gallery div.images div.awarie a:hover {
+  opacity: 0.8;
+}
+section.gallery div.images div.awarie a img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+section.gallery div.images h2:nth-of-type(4) {
+  position: absolute;
+  top: 90%;
+  right: 1%;
+  width: 25%;
+  text-align: center;
+  font-size: 4em;
+  line-height: 70px;
+  color: white;
+  border-radius: 10px;
+  cursor: default;
+  background-color: black;
+}
+section.gallery div.images div.inne {
+  position: absolute;
+  top: 86%;
+  bottom: 1%;
+  left: 1%;
+  right: 27%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+section.gallery div.images div.inne a {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  margin: 0 15px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px 1px black;
+          box-shadow: 0 0 5px 1px black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+section.gallery div.images div.inne a:hover {
+  opacity: 0.8;
+}
+section.gallery div.images div.inne a img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+
+section.contact {
+  position: relative;
+  top: 50px;
+  left: 0;
+  min-height: 450px;
+  min-width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+section.contact h1 {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 250px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 6em;
+  color: white;
+  text-align: center;
+  border-bottom: 1px solid white;
+  cursor: default;
+}
+section.contact div.telEmail {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 1200px;
+  height: 80px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+section.contact div.telEmail div {
+  -ms-flex-preferred-size: 25vw;
+      flex-basis: 25vw;
+  font-size: 3em;
+  font-family: "Cairo", sans-serif;
+  line-height: 80px;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px 1px white;
+          box-shadow: 0 0 5px 1px white;
+}
+section.contact div.telEmail div i {
+  padding-right: 10px;
+  font-size: 1.5em;
+}
+section.contact div.footer {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  min-width: 1200px;
+  font-size: 2.2em;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid white;
 }/*# sourceMappingURL=style.css.map */

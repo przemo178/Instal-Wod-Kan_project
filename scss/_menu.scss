@@ -1,16 +1,19 @@
 nav.menu {
   position: absolute;
-  top: 2vh;
+  // top: 2vh;
+  top: 20px;
   left: 0;
   display: flex;
-  width: 100%;
+  // width: 100%;
+  min-width: 100%;
   justify-content: flex-end;
   //   background-color: black;
   //   border-bottom: 2vh solid white;
   z-index: 1;
   ul {
     display: flex;
-    height: 6vh;
+    // height: 6vh;
+    height: 60px;
     width: 50%;
     justify-content: space-around;
     list-style: none;
@@ -18,14 +21,16 @@ nav.menu {
     li {
       a {
         display: block;
-        width: 9vw;
-        line-height: 6vh;
+        // width: 9vw;
+        min-width: 170px;
+        // line-height: 6vh;
+        line-height: 60px;
         text-align: center;
         text-decoration: none;
         text-transform: uppercase;
         color: white;
         box-shadow: 0 0 10px white;
-        border-radius: 15px;
+        border-radius: 10px;
         // color: #9e6b0f;
         font-size: 1.8em;
         font-weight: 700;

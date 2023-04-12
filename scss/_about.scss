@@ -1,18 +1,23 @@
 section.about {
-  background-color: rgb(247, 247, 243);
-  height: 85vh;
+  // background-color: rgb(247, 247, 243);
+  // height: 85vh;
+  min-height: 850px;
   div.wrapAbout {
     position: relative;
-    top: 8vh;
+    // top: 8vh;
+    top: 80px;
     left: 50%;
     transform: translateX(-50%);
-    width: 60vw;
+    // max-width: 60vw;
+    max-width: 1200px;
+    // background-color: gray;
     h1 {
       position: relative;
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      width: 15vw;
+      // width: 15vw;
+      width: 250px;
       align-items: center;
       font-size: 6em;
       text-align: center;
@@ -23,10 +28,14 @@ section.about {
       font-family: "Cairo", sans-serif;
       font-size: 2.4em;
       text-align: justify;
-      text-indent: 4vw;
-      line-height: 4vh;
-      padding-top: 2vh;
-      padding-bottom: 5vh;
+      // text-indent: 4vw;
+      text-indent: 100px;
+      // line-height: 4vh;
+      line-height: 40px;
+      // padding-top: 2vh;
+      padding-top: 20px;
+      // padding-bottom: 5vh;
+      padding-bottom: 50px;
       cursor: default;
     }
     div.imgAbout {
@@ -45,14 +54,16 @@ section.about {
         left: 0;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 100%;
-        width: 19vw;
-        height: 28vh;
+        background-size: 110%;
+        // width: 19vw;
+        min-width: 370px;
+        // min-height: 28vh;
+        min-height: 280px;
         box-shadow: 0 0 10px black;
-        border-radius: 20px;
+        border-radius: 10px;
         transition: 0.8s;
         &:hover {
-          background-size: 120%;
+          background-size: 130%;
         }
         &:hover p {
           opacity: 1;

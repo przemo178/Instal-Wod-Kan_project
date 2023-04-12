@@ -7,28 +7,34 @@ section.range {
   height: 90vh;
   div.wrapRange {
     position: relative;
-    top: 8vh;
+    // top: 8vh;
+    top: 80px;
     left: 50%;
     transform: translateX(-50%);
-    width: 60vw;
-    height: 80vh;
+    // max-width: 60vw;
+    max-width: 1200px;
+    // height: 80vh;
+    min-height: 700px;
     // background-color: #ddd;
     h1 {
       position: relative;
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      width: 20vw;
-      height: 10vh;
+      // width: 20vw;
+      width: 400px;
+      // height: 10vh;
+      height: 100px;
       //   align-items: center;
-      line-height: 10vh;
+      // line-height: 10vh;
+      line-height: 100px;
       font-size: 6em;
       color: white;
       text-align: center;
       //   border-bottom: 1px solid rgb(255, 221, 0);
       //   border-bottom: 1px solid #0f67be;
       background-color: #0f67be;
-      border-radius: 20px;
+      border-radius: 10px;
       box-shadow: 0 0 15px white;
       opacity: 0.9;
       cursor: default;
@@ -36,22 +42,26 @@ section.range {
     div.blocks {
       display: flex;
       width: 100%;
-      height: 73%;
+      // height: 73%;
+      min-height: 550px;
       flex-wrap: wrap;
       justify-content: space-between;
       align-content: space-between;
       position: relative;
-      top: 5vh;
+      // top: 5vh;
+      top: 50px;
       left: 0;
-      //   background-color: yellow;
+      // background-color: yellow;
       div {
         position: relative;
         top: 0;
         left: 0;
-        width: 13vw;
-        height: 13vw;
+        // width: 13vw;
+        min-width: 250px;
+        // height: 13vw;
+        min-height: 250px;
         background-color: #0f67be;
-        border-radius: 30px;
+        border-radius: 10px;
         box-shadow: 0 0 15px 3px white;
         opacity: 0.9;
         cursor: default;
@@ -62,7 +72,8 @@ section.range {
         }
         i {
           position: absolute;
-          top: 2vh;
+          // top: 2vh;
+          top: 20px;
           left: 50%;
           transform: translateX(-50%);
           font-size: 5em;
@@ -73,7 +84,8 @@ section.range {
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          width: 10vw;
+          // width: 10vw;
+          width: 200px;
           font-size: 3em;
           font-weight: 500;
           color: white;
