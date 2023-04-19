@@ -1,0 +1,99 @@
+section.about {
+  // background-color: rgb(247, 247, 243);
+  // height: 85vh;
+  min-height: 850px;
+  div.wrapAbout {
+    position: relative;
+    // top: 8vh;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    // max-width: 60vw;
+    max-width: 1200px;
+    // background-color: gray;
+    h1 {
+      position: relative;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      // width: 15vw;
+      width: 250px;
+      align-items: center;
+      font-size: 6em;
+      text-align: center;
+      border-bottom: 1px solid black;
+      cursor: default;
+    }
+    p.description {
+      font-family: "Cairo", sans-serif;
+      font-size: 2.4em;
+      text-align: justify;
+      // text-indent: 4vw;
+      text-indent: 100px;
+      // line-height: 4vh;
+      line-height: 40px;
+      // padding-top: 2vh;
+      padding-top: 20px;
+      // padding-bottom: 5vh;
+      padding-bottom: 50px;
+      cursor: default;
+    }
+    div.imgAbout {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      //   img {
+      //     width: 19vw;
+      //     height: 28vh;
+      //     box-shadow: 0 0 10px black;
+      //     border-radius: 10px;
+      //   }
+      div.item {
+        position: relative;
+        top: 0;
+        left: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 110%;
+        // width: 19vw;
+        min-width: 370px;
+        // min-height: 28vh;
+        min-height: 280px;
+        box-shadow: 0 0 10px black;
+        border-radius: 10px;
+        transition: 0.8s;
+        &:hover {
+          background-size: 130%;
+        }
+        &:hover p {
+          opacity: 1;
+        }
+      }
+      div.item:nth-of-type(1) {
+        background-image: url(../img/biznes-komp1.jpg);
+      }
+      div.item:nth-of-type(2) {
+        background-image: url(../img/lopataa.jpg);
+      }
+      div.item:nth-of-type(3) {
+        background-image: url(../img/studnia.jpg);
+      }
+
+      div.item p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Stick No Bills", sans-serif;
+        font-size: 4em;
+        font-weight: 700;
+        color: white;
+        text-shadow: 0 0 10px black;
+        letter-spacing: 1px;
+        opacity: 0;
+        transition: 0.8s;
+        cursor: default;
+      }
+    }
+  }
+}

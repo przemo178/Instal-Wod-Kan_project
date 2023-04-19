@@ -1,0 +1,23 @@
+div.background {
+  text-align: center;
+  // background-image: url(../img/tapeta.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+@media (max-width: 640px) {
+  div.background {
+    background-image: url("/img/tapeta_640x639.jpg");
+  }
+}
+@media (min-width: 641px) and (max-width: 1280px) {
+  div.background {
+    background-image: url("/img/tapeta_1280x785.jpg");
+  }
+}
+@media (min-width: 1281px) {
+  div.background {
+    background-image: url("/img/tapeta_1920x1178.jpg");
+  }
+}

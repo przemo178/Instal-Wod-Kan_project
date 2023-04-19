@@ -1,0 +1,241 @@
+nav.menu {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  display: flex;
+  min-width: 100%;
+  justify-content: flex-end;
+  z-index: 1;
+  ul {
+    display: flex;
+    height: 60px;
+    width: 60%;
+    justify-content: space-around;
+    list-style: none;
+    padding-right: 30px;
+    // background-color: black;
+    li {
+      a {
+        display: block;
+        min-width: 170px;
+        line-height: 60px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-shadow: 0 0 10px black;
+        color: white;
+        box-shadow: 0 0 5px 2px white;
+        border-radius: 10px;
+        font-size: 1.8em;
+        font-weight: 700;
+        letter-spacing: 1px;
+        transition: 0.3s;
+        &:hover {
+          font-size: 2.3em;
+          box-shadow: 0 0 10px 5px white;
+        }
+      }
+    }
+  }
+}
+
+//orientacje landscape
+
+@media (max-width: 1600px) and (orientation: landscape) {
+  nav.menu {
+    ul {
+      height: 140px;
+      width: 44%;
+      flex-wrap: wrap;
+      align-content: space-between;
+    }
+  }
+}
+@media (max-width: 1280px) and (orientation: landscape) {
+  nav.menu {
+    ul {
+      height: 200px;
+      width: 40%;
+    }
+  }
+}
+@media (max-width: 1024px) and (orientation: landscape) {
+  nav.menu {
+    ul {
+      height: 500px;
+      width: 30%;
+      padding-right: 0;
+      li {
+        a {
+          min-width: 240px;
+          line-height: 80px;
+          font-size: 3em;
+          box-shadow: 0 0 5px 5px white;
+          &:hover {
+            font-size: 3.3em;
+            box-shadow: 0 0 10px 10px white;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 915px) and (orientation: landscape) {
+  nav.menu {
+    ul {
+      height: 350px;
+      width: 25%;
+      padding-right: 60px;
+      li {
+        a {
+          line-height: 50px;
+          font-size: 2em;
+          box-shadow: 0 0 5px 5px white;
+          &:hover {
+            font-size: 2em;
+            box-shadow: 0 0 5px 5px white;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 740px) and (orientation: landscape) {
+  //360
+  nav.menu {
+    top: 80px;
+    ul {
+      height: 270px;
+      width: 20%;
+      padding-right: 80px;
+      li {
+        a {
+          min-width: 190px;
+          line-height: 45px;
+          font-size: 2em;
+          box-shadow: 0 0 5px 3px white;
+          &:hover {
+            font-size: 2em;
+            box-shadow: 0 0 5px 3px white;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 720px) and (orientation: landscape) {
+  // fold 515
+  nav.menu {
+    top: 100px;
+    ul {
+      height: 300px;
+    }
+  }
+}
+@media (max-width: 667px) and (orientation: landscape) {
+  //fold 280 //655
+  nav.menu {
+    top: 80px;
+    ul {
+      height: 250px;
+      li {
+        a {
+          line-height: 40px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 653px) and (orientation: landscape) {
+  nav.menu {
+    top: 20px;
+  }
+}
+@media (max-width: 540px) and (orientation: landscape) {
+  //340 max height
+  nav.menu {
+    top: 80px;
+    ul {
+      height: 230px;
+      li {
+        a {
+          min-width: 170px;
+          box-shadow: 0 0 5px 2px white;
+          &:hover {
+            box-shadow: 0 0 5px 2px white;
+          }
+        }
+      }
+    }
+  }
+}
+
+// orientacje portrait
+
+@media (max-width: 1024px) and (orientation: portrait) {
+  nav.menu {
+    top: 100px;
+    ul {
+      height: 600px;
+      width: 25%;
+      flex-wrap: wrap;
+      align-content: space-between;
+      li {
+        a {
+          min-width: 240px;
+          line-height: 80px;
+          font-size: 3em;
+          box-shadow: 0 0 5px 5px white;
+          &:hover {
+            font-size: 3em;
+            box-shadow: 0 0 5px 5px white;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 820px) and (orientation: portrait) {
+  nav.menu {
+    top: 150px;
+    ul {
+      padding-right: 80px;
+    }
+  }
+}
+@media (max-width: 648px) and (orientation: portrait) {
+  nav.menu {
+    top: 150px;
+    ul {
+      height: 400px;
+      width: 25%;
+      li {
+        a {
+          min-width: 200px;
+          line-height: 60px;
+          font-size: 2em;
+          &:hover {
+            font-size: 2em;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 512px) and (orientation: portrait) {
+  nav.menu {
+    top: 100px;
+    ul {
+      width: 20%;
+      li {
+        a {
+          min-width: 150px;
+          font-size: 1.8em;
+          &:hover {
+            font-size: 1.8em;
+          }
+        }
+      }
+    }
+  }
+}
