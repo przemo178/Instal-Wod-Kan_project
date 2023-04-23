@@ -241,34 +241,122 @@ nav.menu {
 }
 @media (max-width: 415px) and (orientation: portrait) {
   nav.menu {
+    position: absolute;
     top: 300px;
-    left: 50%;
-    // min-width: 80%;
-    justify-content: flex-start;
-    // background-color: yellow;
-    justify-content: space-between;
-
+    left: 0;
+    display: flex;
+    min-width: 100%;
+    justify-content: center;
     ul {
-      // background-color: black;
-      // width: 80%;
-      // justify-content: space-between;
+      display: flex;
+      height: 520px;
+      flex-wrap: wrap;
+      padding: 0;
       li {
-        // justify-content: center;
-        // flex-basis: 200px;
-        height: 120px;
-        // width: 350px;
-        // background-color: red;
+        a {
+          min-width: 280px;
+          height: 80px;
+          line-height: 80px;
+          font-size: 3em;
+          background-color: rgba(255, 255, 255, 0.3);
+          &:hover {
+            font-size: 3em;
+          }
+        }
+      }
+    }
+  }
+  // nav.menu {
+  //   top: 300px;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   min-width: 60%;
+  //   justify-content: flex-start;
+  //   ul {
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     height: 550px;
+  //     width: 250px;
+  //     li {
+  //       a {
+  //         min-width: 250px;
+  //         height: 90px;
+  //         line-height: 90px;
+  //         font-size: 3em;
+  //         &:hover {
+  //           font-size: 3em;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+}
+@media (max-width: 375px) and (orientation: portrait) {
+  nav.menu {
+    ul {
+      height: 350px;
+      li {
         a {
           min-width: 250px;
-          height: 90px;
-          line-height: 90px;
-          font-size: 3em;
+          height: 50px;
+          line-height: 50px;
+          font-size: 2.3em;
           &:hover {
-            font-size:3em;
+            font-size: 2.3em;
           }
         }
       }
     }
   }
 }
-
+@media (max-width: 360px) and (orientation: portrait) {
+  nav.menu {
+    ul {
+      height: 400px;
+      li {
+        a {
+          min-width: 250px;
+          height: 65px;
+          line-height: 65px;
+          &:hover {
+            font-size: 2.3em;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 320px) and (orientation: portrait) {
+  nav.menu {
+    top: 220px;
+    ul {
+      height: 300px;
+      li {
+        a {
+          min-width: 200px;
+          height: 45px;
+          line-height: 45px;
+          font-size: 2em;
+          &:hover {
+            font-size: 2em;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 280px) and (orientation: portrait) {
+  nav.menu {
+    ul {
+      height: 400px;
+      li {
+        a {
+          min-width: 200px;
+          height: 60px;
+          line-height: 60px;
+        }
+      }
+    }
+  }
+}
