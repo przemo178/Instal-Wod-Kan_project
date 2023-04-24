@@ -80,7 +80,7 @@ nav.menu {
     }
   }
 }
-@media (max-width: 915px) and (orientation: landscape) {
+@media (max-width: 916px) and (orientation: landscape) {
   nav.menu {
     ul {
       height: 350px;
@@ -132,10 +132,9 @@ nav.menu {
     }
   }
 }
-@media (max-width: 667px) and (orientation: landscape) {
-  //fold 280 //655
+@media (max-width: 668px) and (orientation: landscape) {
   nav.menu {
-    top: 80px;
+    top: 15px;
     ul {
       height: 250px;
       li {
@@ -266,33 +265,8 @@ nav.menu {
       }
     }
   }
-  // nav.menu {
-  //   top: 300px;
-  //   left: 50%;
-  //   transform: translateX(-50%);
-  //   min-width: 60%;
-  //   justify-content: flex-start;
-  //   ul {
-  //     position: absolute;
-  //     top: 0;
-  //     left: 0;
-  //     height: 550px;
-  //     width: 250px;
-  //     li {
-  //       a {
-  //         min-width: 250px;
-  //         height: 90px;
-  //         line-height: 90px;
-  //         font-size: 3em;
-  //         &:hover {
-  //           font-size: 3em;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
 }
-@media (max-width: 375px) and (orientation: portrait) {
+@media (max-width: 376px) and (orientation: portrait) {
   nav.menu {
     ul {
       height: 350px;
@@ -313,12 +287,12 @@ nav.menu {
 @media (max-width: 360px) and (orientation: portrait) {
   nav.menu {
     ul {
-      height: 400px;
+      height: 300px;
       li {
         a {
           min-width: 250px;
-          height: 65px;
-          line-height: 65px;
+          height: 45px;
+          line-height: 45px;
           &:hover {
             font-size: 2.3em;
           }

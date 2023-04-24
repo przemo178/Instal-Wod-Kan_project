@@ -44,9 +44,16 @@ div.logo p {
 
 //orientacje landscape
 
-@media (max-width: 915px) and (orientation: landscape) {
+@media (max-width: 916px) and (orientation: landscape) {
   div.logo a {
+    &:nth-child(1) {
+      position: absolute;
+    }
+    img {
+      position: absolute;
+    }
     &:nth-child(2) {
+      position: absolute;
       &:hover {
         padding: 0;
       }
@@ -98,7 +105,14 @@ div.logo p {
 
 @media (max-width: 1024px) and (orientation: portrait) {
   div.logo a {
+    &:nth-child(1) {
+      position: absolute;
+    }
+    img {
+      position: absolute;
+    }
     &:nth-child(2) {
+      position: absolute;
       &:hover {
         padding: 0;
       }
